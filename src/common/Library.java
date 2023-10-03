@@ -7,10 +7,10 @@ import java.util.Scanner;
  * @author Dell
  */
 public class Library {
-   
+
     private final Scanner sc = new Scanner(System.in);
-    
-    public int getInt(String promt,int m, int n) {
+
+    public int getInt(String promt, int m, int n) {
         int a = -1;
         while (true) {
             System.out.print(promt + ": ");
@@ -19,8 +19,7 @@ public class Library {
                 a = Integer.parseInt(s);
                 if (a >= m && a <= n) {
                     break;
-                }
-                else {
+                } else {
                     System.out.println("Please enter a number between " + m + " and " + n);
                 }
             } catch (Exception e) {
@@ -29,7 +28,7 @@ public class Library {
         }
         return a;
     }
-    
+
     public String inputString(String mes) {
         System.out.print(mes);
         while (true) {
@@ -42,8 +41,5 @@ public class Library {
             }
         }
     }
-    
 
-
-  
 }

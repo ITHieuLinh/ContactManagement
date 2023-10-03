@@ -1,18 +1,10 @@
 package Repository;
 
-import java.util.ArrayList;
-import java.util.List;
-import model.Contact;
-
-
 public interface IContactRepository {
 
-    void addContact(ArrayList<Contact> contacts, int type);
+    void createContact();
 
-    void deleteContact(int contactId);
+    void printAllContact();
 
-    List<Contact> getAllContact();
-
-    Contact getContactById(int contactId);
-
+    void deleteContactd();
 }

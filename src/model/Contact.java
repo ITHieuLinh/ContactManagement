@@ -1,9 +1,5 @@
 package model;
 
-/**
- *
- * @author Dell
- */
 public class Contact {
 
     private int contactId;
@@ -124,6 +120,5 @@ public class Contact {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 
 }
